@@ -60,7 +60,7 @@ $(document).ready(function () {
             $("#loader").show();
 
             $.ajax({
-                url: 'get_in_touch_form.php',
+                url: 'get_in_touch_form.html',
                 type: 'POST',
                 data: formData,
                 dataType: 'json',

@@ -61,7 +61,7 @@ $(document).ready(function () {
             $("#loader").show();
 
             $.ajax({
-                url: 'contact_us_enquiry_form.php',
+                url: 'contact_us_enquiry_form.html',
                 type: 'POST',
                 data: formData,
                 dataType: 'json',

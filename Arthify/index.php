@@ -93,19 +93,19 @@
       <div class="row">
         <div class="main-dv">
           <div class="left_logo">
-            <a href="index.php">
+            <a href="index.html">
               <img src="./assets/img/logo300x-100.png" alt="" class="img-fluid" width="180" /></a>
           </div>
           <div class="rigt-links">
             <ul class="position-relative">
-              <li><a href="index.php" class="active_link">Home</a></li>
+              <li><a href="index.html" class="active_link">Home</a></li>
               <li><a href="#Aboutus" class="mobiel_viewClick">About US</a></li>
               <li><a href="#whatweoffer" class="mobiel_viewClick">What We Offer </a></li>
               <!-- <li><a href="#Snapshoot">SnapShot</a></li> -->
               <li><a href="#project" class="mobiel_viewClick">Recent Project</a></li>
-              <li><a href="contactus.php">Contact Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
               <div class="mobile-logo">
-                <a href="index.php">
+                <a href="index.html">
                   <img src="./assets/img/logo300x-100.png" alt="" class="img-fluid" width="100" /></a>
               </div>
             </ul>
@@ -500,9 +500,9 @@
             </div>
           </a>
 
-         </div>
+        </div>
 
-         <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+        <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="environmental-defense-fund-mumbai.html">
             <div class="project_detailss">
               <img src="assets/img/placeholder-coming-soon.png" alt="" class="w-100">
@@ -518,9 +518,9 @@
             </div>
           </a>
 
-         </div>
+        </div>
 
-         <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+        <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="environmental-defense-fund-goa.html">
             <div class="project_detailss">
               <img src="assets/img/placeholder-coming-soon.png" alt="" class="w-100">
@@ -536,7 +536,7 @@
             </div>
           </a>
 
-         </div>
+        </div>
 
         <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="international-foundation-for-research-and-education.html">
@@ -607,7 +607,7 @@
           </a>
 
         </div> -->
-          <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 ">
+        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 ">
           <a href="sanskriti-university.html">
             <div class="project_detailss">
               <img src="assets/img/recent.jpeg" alt="" class="w-100">
@@ -624,7 +624,7 @@
           </a>
 
         </div> -->
-         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 ">
+        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 ">
           <a href="national-workshop.html">
             <div class="project_detailss">
               <img src="assets/img/homepageimage.jpeg" alt="" class="w-100">
@@ -1542,8 +1542,8 @@
             </div> -->
             <div class="footer-icons-details">
               <p class="d-flex gap-3">
-                <i class="fa-solid fa-location-dot"></i>  
-                Suit: 4, C-52, 2nd Floor, 
+                <i class="fa-solid fa-location-dot"></i>
+                Suit: 4, C-52, 2nd Floor,
                 Cyber Square Sector – 62, Noida(UP) - 201309
               </p>
             </div>
@@ -1594,7 +1594,7 @@
 
             <ul>
               <li>
-                <a href="index.php">
+                <a href="index.html">
                   <i class="fa-sharp fa-solid fa-paper-plane"></i> Home</a>
               </li>
               <li>
@@ -1609,7 +1609,7 @@
                 <a href="#gallery"><i class="fa-solid fa-paper-plane"></i> GALLERY</a>
               </li>
               <li>
-                <a href="contactus.php"><i class="fa-solid fa-paper-plane"></i> CONTACT US</a>
+                <a href="contactus.html"><i class="fa-solid fa-paper-plane"></i> CONTACT US</a>
               </li>
             </ul>
           </div>
