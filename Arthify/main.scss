@@ -1,0 +1,149 @@
+@import './components/layout';
+@import './components/variabls';
+@import './components/navbar';
+@font-face {
+    font-family: "Segeo";
+    src: url("/assets/segoefonts/Segoe/UI.ttf");
+    src: url("/assets/segoefonts/Segoe\ UI.ttf"),
+    }
+
+    @font-face {
+        font-family: "Allrox";
+        src: url("/assets/allrox/OpenType-PS/Allrox.otf");
+        src: url("/assets/allrox/OpenType-TT/Allrox.ttf"),
+        }
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+
+    --bs-body-font-family:"Segeo";
+}
+
+body{
+
+    overflow-x: hidden;
+}
+
+a{
+
+    text-decoration: none;
+    font-family: "Segeo";
+}
+
+li{
+
+    list-style: none;
+}
+
+html{
+
+    overflow-x: hidden;
+    font-family: "Segeo";
+}
+h2,h3,h4,h5,h6{
+
+    font-family: "Segeo";  
+}
+h1{
+
+    font-family: "Allrox";
+
+    @media only screen and (min-width:560px) and (max-width:1200px){
+
+        font-size: 43px !important;
+    }
+}
+h1{
+
+    font-size: 60px;
+
+    @media (max-width: 560px) {
+        font-size: 37px;
+      }
+}
+.btn_cstom{
+
+    padding: 12px 30px;
+    background-color:$btn_color;
+    border: 0;
+    &:hover{
+
+        background: linear-gradient(90deg, rgb(255, 170, 68) 15%, rgb(243, 34, 170) 100%);
+        color: $color_2;
+        border: 0;
+    }
+    @media(max-width:560px){
+
+        padding: 10px 25px;
+    }
+    &:active{
+
+        background-color:$btn_color !important;
+    }
+}
+
+p{
+
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.top_titles{
+
+    color: $color_4;
+    font-size: 20px;
+}
+
+.padding-top{
+
+    padding-top: 60px !important;
+}
+
+.padding-bottom{
+
+    padding-bottom: 60px !important; 
+}
+
+// .margin-bottom{
+
+//    margin-bottom: 50px !important; 
+// }
+.heading-title{
+
+    font-weight: 500;
+    z-index: 1;
+   
+}
+
+.u-line{
+
+    position: relative;
+    white-space: nowrap;
+
+    @media (max-width: 560px) {
+        white-space: normal;
+      }
+}
+
+.u-line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255,170,68,1) 15%, rgba(243,34,170,1) 100%);
+    z-index: -1;
+}
+
+.managemnt_ag-padding{
+
+    padding-top: 5% !important;
+}
+
+
