@@ -61,7 +61,11 @@ $(document).ready(function () {
             $("#loader").show();
 
             $.ajax({
+<<<<<<< HEAD
                 url: 'contact_us_enquiry_form.html',
+=======
+                url: 'contact_us_enquiry_form.php',
+>>>>>>> 7d4fd85 (Update website content)
                 type: 'POST',
                 data: formData,
                 dataType: 'json',

@@ -1,0 +1,753 @@
+/* =====================================================
+   Wedding & Social Events  +  Moments We Created
+   Scoped styles for the homepage. Reuses the site palette
+   (gold #fa4, pink #f322aa) and matches main.css tokens.
+   ===================================================== */
+
+/* ---------- Wedding & Social Events ---------- */
+#wedding-social .wedding-card {
+  background: #fff;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#wedding-social .wedding-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+#wedding-social .wedding-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+#wedding-social .wedding-card-img {
+  position: relative;
+  overflow: hidden;
+  padding-top: 70%;
+}
+
+#wedding-social .wedding-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+#wedding-social .wedding-card:hover .wedding-card-img img {
+  transform: scale(1.1);
+}
+
+#wedding-social .wedding-card-body {
+  padding: 20px;
+}
+
+#wedding-social .wedding-card-title {
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #212529;
+}
+
+#wedding-social .wedding-card-loc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fa4;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#wedding-social .wedding-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+#wedding-social .wedding-readmore {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+/* ---------- Moments We Created ---------- */
+#moments .moments-left {
+  padding-right: 25px;
+}
+
+#moments .moments-desc {
+  max-width: 520px;
+}
+
+#moments .insta-know {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 32px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 45%, #8134af 75%, #515bd4 100%);
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 0 10px 26px rgba(221, 42, 123, 0.30);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#moments .insta-know:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(221, 42, 123, 0.42);
+  color: #fff;
+}
+
+#moments .moments-masonry {
+  column-count: 3;
+  column-gap: 14px;
+}
+
+#moments .moments-masonry a {
+  display: block;
+  margin: 0 0 14px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  break-inside: avoid;
+}
+
+#moments .moments-masonry img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+#moments .moments-masonry a::after {
+  content: "\f16d";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(255, 170, 68, 0.85) 0%, rgba(243, 34, 170, 0.85) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#moments .moments-masonry a:hover img {
+  transform: scale(1.09);
+}
+
+#moments .moments-masonry a:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  #moments .moments-left {
+    padding-right: 0;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+  #moments .moments-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #moments .moments-masonry {
+    column-count: 2;
+  }
+}
+
+/* =====================================================
+   Wedding Events Listing Page  (recentwedding.html)
+   Replicates the Venue / "When & Where" card from the
+   Wedding Detail theme (custom.css): cream box + white
+   inner + gold gradient border, overlapping a rectangular
+   image with leaf/flower corner decorations.
+   ===================================================== */
+.wedding-listing {
+  background: #FBFAF5;
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+/* faded floral illustrations on both sides (low opacity) */
+.wedding-listing .wl-side {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.wedding-listing .wl-side img { width: 210px; height: auto; }
+.wedding-listing .wl-side-left  { top: 7%;  left: 0; }
+.wedding-listing .wl-side-right { top: 55%; right: 0; transform: scaleX(-1); }
+.wedding-listing .container { position: relative; z-index: 2; }
+
+/* heading + floral divider (matches the Gallery heading) */
+.wedding-listing .wl-head { margin-bottom: 55px; }
+.wedding-listing .wl-title {
+  font-family: "Adine Kirnberg" !important;
+  font-size: 80px;
+  line-height: 1;
+  color: #313149;
+  margin-bottom: 0;
+}
+.wedding-listing .wl-floral {
+  display: block;
+  width: 391px;
+  max-width: 70%;
+  height: auto;
+  margin: -16px auto 6px;
+}
+.wedding-listing .wl-subtitle {
+  font-family: "Sitka" !important;
+  color: #7F7F7F;
+  font-size: 16px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* subtle reveal-on-scroll for each event row */
+.wedding-listing .wed-event {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.wedding-listing .wed-event.is-visible { opacity: 1; transform: none; }
+.wedding-listing .wed-event.wed-hidden { display: none; }
+
+/* image: large, rectangular (no rounded corners), soft shadow, hover zoom */
+.wedding-listing .leftImg { display: block; }
+.wedding-listing .leftImg > img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 18px 45px rgba(120, 90, 30, 0.18);
+  transition: transform .6s ease;
+}
+.wedding-listing .wed-event:hover .leftImg > img { transform: scale(1.04); }
+
+/* keep the info card overlapping in FRONT of the image (like the Venue card) */
+.wedding-listing .row .col-xl-6:last-child { position: relative; z-index: 3; }
+
+/* layered card: cream outer (.rightBg) + white inner (.bordedr-setbx) + gold border */
+.wedding-listing .rightBg { box-shadow: 0 18px 45px rgba(120, 90, 30, 0.12); }
+.wedding-listing .bordedr-setbx {
+  padding: 40px 30px;
+  box-shadow: 0 6px 20px rgba(120, 90, 30, 0.08);
+}
+.wedding-listing .bordedr-setbx p { max-width: none; }
+.wedding-listing .wed-name {
+  font-size: 54px;
+  line-height: 1.05;
+  color: #313149;
+  margin-bottom: 14px;
+}
+.wedding-listing .wed-date {
+  font-family: "Sitka" !important;
+  color: #B17014;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}
+.wedding-listing .wed-venue {
+  font-family: "Sitka" !important;
+  color: #4d4d4d;
+  margin-bottom: 14px;
+}
+.wedding-listing .wed-desc {
+  font-family: "Sitka" !important;
+  color: #7F7F7F;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 360px;
+  margin: 0 auto 22px;
+}
+.wedding-listing .bordedr-setbx .knowmoreBtn { margin-top: 4px; }
+.wedding-listing .knowmoreBtn:hover {
+  background:
+    linear-gradient(#816FC2, #D8D1F7) padding-box,
+    linear-gradient(90deg, #B17014 0%, #E0A431 25%, #FFFF94 65%, #FBC63F 83%, #A45F0D 100%) border-box;
+  color: #fff;
+}
+.wedding-listing .wl-more { margin-top: 45px; text-align: center; }
+
+/* Tablet & mobile: stack (image on top, card below), remove overlap */
+@media (max-width: 991px) {
+  .wedding-listing .wl-title { font-size: 64px; }
+  .wedding-listing .wed-name { font-size: 44px; }
+  /* stack: image on top, details below */
+  .wedding-listing .wed-event > [class*="col-"] { flex: 0 0 100%; max-width: 100%; width: 100%; }
+  .wedding-listing .rightBg { margin-top: 26px; }
+  .wedding-listing .leftImg > img { height: 340px; }
+}
+@media (max-width: 575px) {
+  .wedding-listing .wl-title { font-size: 50px; }
+  .wedding-listing .wed-name { font-size: 36px; }
+  .wedding-listing .leftImg > img { height: 250px; }
+  .wedding-listing .bordedr-setbx { padding: 28px 20px; }
+  .wedding-listing .wl-side img { width: 130px; }
+}
+
+/* =====================================================
+   Book Event section (recentwedding.html)
+   Reuses the .wedding-listing wrappers (ivory bg, side
+   florals, title + floral divider) and the Venue card
+   (.rightBg + .bordedr-setbx). Adds a luxury booking form.
+   ===================================================== */
+.book-event .wl-subtitle { font-style: italic; }
+
+/* left column: image + descriptive content */
+.book-event .be-content { margin-top: 36px; }
+.book-event .be-heading {
+  font-family: "Adine Kirnberg" !important;
+  font-size: 48px;
+  line-height: 1.05;
+  color: #313149;
+  margin-bottom: 18px;
+}
+.book-event .be-content p {
+  font-family: "Sitka" !important;
+  color: #7F7F7F;
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+.book-event .be-services-title {
+  font-family: "Adine Kirnberg" !important;
+  font-size: 36px;
+  color: #B17014;
+  margin: 26px 0 16px;
+}
+.book-event .be-services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 34px;
+}
+.book-event .be-services li {
+  font-family: "Sitka" !important;
+  color: #4d4d4d;
+  font-size: 15px;
+  padding: 7px 0 7px 26px;
+  position: relative;
+  break-inside: avoid;
+}
+.book-event .be-services li::before {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #E0A431;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+/* right column: luxury booking card (same language as Venue card) */
+.book-event .be-card.rightBg { box-shadow: 0 18px 45px rgba(120, 90, 30, 0.14); }
+.book-event .be-card .bordedr-setbx { padding: 36px 30px; text-align: left; }
+.book-event .be-card-title {
+  font-family: "Adine Kirnberg" !important;
+  font-size: 58px;
+  line-height: 1;
+  color: #313149;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.book-event .be-card-sub {
+  font-family: "Sitka" !important;
+  font-style: italic;
+  color: #7F7F7F;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.book-event .be-field { margin-bottom: 16px; }
+.book-event .be-label {
+  display: block;
+  font-family: "Sitka" !important;
+  color: #7a6a4a;
+  font-size: 13px;
+  letter-spacing: .4px;
+  margin-bottom: 6px;
+}
+.book-event .be-input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(224, 164, 49, 0.45);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: "Sitka" !important;
+  color: #313149;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .3s ease, box-shadow .3s ease;
+}
+.book-event .be-input::placeholder { color: #b7ad98; }
+.book-event .be-input:focus {
+  border-color: #B17014;
+  box-shadow: 0 0 0 3px rgba(224, 164, 49, 0.18);
+}
+.book-event textarea.be-input { resize: vertical; min-height: 110px; }
+.book-event .be-submit { text-align: center; margin-top: 22px; }
+/* BOOK NOW: same pill as Read More, but golden text */
+.book-event .be-submit .knowmoreBtn { color: #B17014; padding: 12px 46px; }
+
+@media (max-width: 991px) {
+  .book-event .be-card.rightBg { margin-top: 34px; }
+  .book-event .be-heading { font-size: 40px; }
+}
+@media (max-width: 575px) {
+  .book-event .be-services { columns: 1; }
+  .book-event .be-card-title { font-size: 46px; }
+  .book-event .be-card .bordedr-setbx { padding: 28px 20px; }
+}
+
+/* =====================================================
+   GLOBAL: pure white background for the wedding page
+   (keeps golden accents, typography, florals & cards)
+   ===================================================== */
+body.wedding-page { background: #ffffff; }
+.wedding-listing { background: #ffffff; }
+
+/* =====================================================
+   We Also Offer  — premium service carousel (Owl)
+   Reuses .wedding-listing wrappers (title, florals, spacing)
+   ===================================================== */
+.we-offer .offer-carousel { position: relative; }
+.we-offer .owl-stage-outer { padding: 16px 0 34px; }
+.we-offer .item { height: 100%; }
+
+.we-offer .offer-card {
+  background: #ffffff;
+  border: 1px solid rgba(224, 164, 49, 0.45);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(120, 90, 30, 0.10);
+  transition: transform .4s ease, box-shadow .4s ease;
+  height: 100%;
+}
+.we-offer .offer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 46px rgba(177, 112, 20, 0.22);
+}
+.we-offer .offer-img { overflow: hidden; }
+.we-offer .offer-img img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease;
+}
+.we-offer .offer-card:hover .offer-img img { transform: scale(1.08); }
+
+.we-offer .offer-body { padding: 26px 24px 30px; text-align: center; }
+.we-offer .offer-title {
+  font-family: "Adine Kirnberg" !important;
+  font-size: 38px;
+  line-height: 1.1;
+  color: #313149;
+  margin-bottom: 10px;
+}
+.we-offer .offer-desc {
+  font-family: "Sitka" !important;
+  color: #7F7F7F;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  min-height: 72px;
+}
+.we-offer .offer-body .knowmoreBtn { color: #B17014; }
+
+/* Owl navigation arrows (left / right) */
+.we-offer .owl-nav { margin: 0; }
+.we-offer .owl-nav button.owl-prev,
+.we-offer .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(224, 164, 49, 0.6) !important;
+  color: #B17014 !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  box-shadow: 0 6px 18px rgba(120, 90, 30, 0.15);
+  transition: background .3s ease, color .3s ease;
+}
+.we-offer .owl-nav button.owl-prev { left: -12px; }
+.we-offer .owl-nav button.owl-next { right: -12px; }
+.we-offer .owl-nav button.owl-prev:hover,
+.we-offer .owl-nav button.owl-next:hover {
+  background: #B17014 !important;
+  color: #ffffff !important;
+}
+.we-offer .owl-nav button.owl-prev.disabled,
+.we-offer .owl-nav button.owl-next.disabled { opacity: .4; }
+
+/* Owl pagination dots */
+.we-offer .owl-dots { text-align: center; margin-top: 22px; }
+.we-offer .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background: rgba(224, 164, 49, 0.35);
+  transition: all .3s ease;
+}
+.we-offer .owl-dots .owl-dot.active span {
+  width: 26px;
+  border-radius: 6px;
+  background: #B17014;
+}
+
+@media (max-width: 1199px) {
+  .we-offer .owl-nav button.owl-prev { left: 0; }
+  .we-offer .owl-nav button.owl-next { right: 0; }
+}
+@media (max-width: 575px) {
+  .we-offer .offer-title { font-size: 32px; }
+  .we-offer .offer-desc { min-height: 0; }
+}
+
+/* =====================================================
+   Wedding Gallery page (wedding_gallery.html)
+   Pinterest masonry + elegant Photo/Video tabs.
+   Reuses .wedding-listing wrappers (white bg, florals,
+   title + floral divider).
+   ===================================================== */
+.wedding-gallery .gal-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 6px;
+}
+.wedding-gallery .gal-tab {
+  font-family: "Sitka" !important;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9a8f7d;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(122, 106, 74, 0.25);
+  border-radius: 0;
+  padding: 10px 26px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.wedding-gallery .gal-tab.active {
+  color: #313149;
+  background: #ffffff;
+  border: 1px solid rgba(224, 164, 49, 0.75);
+  border-radius: 30px;
+  box-shadow: 0 6px 16px rgba(120, 90, 30, 0.10);
+}
+
+.wedding-gallery .gal-filters { text-align: center; margin: 30px 0 34px; }
+.wedding-gallery .gal-chip {
+  font-family: "Sitka" !important;
+  font-size: 13px;
+  letter-spacing: .5px;
+  color: #7a6a4a;
+  background: transparent;
+  border: 1px solid rgba(224, 164, 49, 0.5);
+  border-radius: 30px;
+  padding: 7px 20px;
+  margin: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.wedding-gallery .gal-chip:hover,
+.wedding-gallery .gal-chip.active {
+  background: #B17014;
+  border-color: #B17014;
+  color: #fff;
+}
+
+.wedding-gallery .gal-panel[hidden] { display: none; }
+
+/* Pinterest-style masonry (natural heights) */
+.wedding-gallery .mgallery { column-count: 4; column-gap: 16px; }
+.wedding-gallery .mg-item {
+  display: block;
+  position: relative;
+  margin: 0 0 16px;
+  break-inside: avoid;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(120, 90, 30, 0.10);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s ease, box-shadow .4s ease;
+}
+.wedding-gallery .mg-item.is-visible { opacity: 1; transform: none; }
+.wedding-gallery .mg-item img { width: 100%; display: block; transition: transform .6s ease; }
+.wedding-gallery .mg-item:hover { box-shadow: 0 18px 40px rgba(177, 112, 20, 0.22); }
+.wedding-gallery .mg-item:hover img { transform: scale(1.06); }
+
+/* video play overlay */
+.wedding-gallery .mg-video .mg-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(49, 49, 73, 0.28);
+  transition: background .3s ease;
+}
+.wedding-gallery .mg-video .mg-play i {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #B17014;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding-left: 4px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: all .3s ease;
+}
+.wedding-gallery .mg-video:hover .mg-play { background: rgba(49, 49, 73, 0.12); }
+.wedding-gallery .mg-video:hover .mg-play i { background: #B17014; color: #fff; }
+
+@media (max-width: 1199px) { .wedding-gallery .mgallery { column-count: 3; } }
+@media (max-width: 767px)  { .wedding-gallery .mgallery { column-count: 2; } .wedding-gallery .gal-tab { padding: 9px 18px; font-size: 13px; } }
+@media (max-width: 459px)  { .wedding-gallery .mgallery { column-count: 1; } }
+
+/* Gallery — Load More button */
+.wedding-gallery .gal-more { text-align: center; margin-top: 44px; }
+.wedding-gallery .gal-more[hidden] { display: none; }
+.wedding-gallery .gal-more .knowmoreBtn { color: #B17014; padding: 12px 46px; }
+
+/* =====================================================
+   More Albums — album carousel (Owl) on the gallery page
+   Same language as "We Also Offer": white cards, gold
+   border, soft shadow, gold arrows/dots.
+   ===================================================== */
+.more-albums .album-carousel { position: relative; }
+.more-albums .owl-stage-outer { padding: 16px 0 34px; }
+.more-albums .item { height: 100%; }
+
+.more-albums .album-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid rgba(224, 164, 49, 0.45);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(120, 90, 30, 0.10);
+  transition: transform .4s ease, box-shadow .4s ease;
+  height: 100%;
+  text-decoration: none;
+}
+.more-albums .album-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 46px rgba(177, 112, 20, 0.22);
+}
+.more-albums .album-media { position: relative; overflow: hidden; }
+.more-albums .album-media img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease;
+}
+.more-albums .album-card:hover .album-media img { transform: scale(1.08); }
+.more-albums .album-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(177, 112, 20, 0.85);
+  color: #fff;
+  font-family: "Sitka" !important;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 5px 14px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+.more-albums .album-body { padding: 22px 24px 28px; text-align: center; }
+.more-albums .album-cat {
+  font-family: "Sitka" !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  color: #B17014;
+  margin-bottom: 8px;
+}
+.more-albums .album-title {
+  font-family: "Adine Kirnberg" !important;
+  font-size: 38px;
+  line-height: 1.1;
+  color: #313149;
+  margin-bottom: 10px;
+}
+.more-albums .album-desc {
+  font-family: "Sitka" !important;
+  color: #7F7F7F;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  min-height: 66px;
+}
+.more-albums .album-body .knowmoreBtn { color: #B17014; }
+
+/* Owl navigation arrows */
+.more-albums .owl-nav { margin: 0; }
+.more-albums .owl-nav button.owl-prev,
+.more-albums .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(224, 164, 49, 0.6) !important;
+  color: #B17014 !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  box-shadow: 0 6px 18px rgba(120, 90, 30, 0.15);
+  transition: background .3s ease, color .3s ease;
+}
+.more-albums .owl-nav button.owl-prev { left: -12px; }
+.more-albums .owl-nav button.owl-next { right: -12px; }
+.more-albums .owl-nav button.owl-prev:hover,
+.more-albums .owl-nav button.owl-next:hover { background: #B17014 !important; color: #fff !important; }
+
+/* Owl pagination dots */
+.more-albums .owl-dots { text-align: center; margin-top: 22px; }
+.more-albums .owl-dots .owl-dot span {
+  width: 10px; height: 10px; margin: 5px;
+  background: rgba(224, 164, 49, 0.35);
+  transition: all .3s ease;
+}
+.more-albums .owl-dots .owl-dot.active span { width: 26px; border-radius: 6px; background: #B17014; }
+
+@media (max-width: 1199px) {
+  .more-albums .owl-nav button.owl-prev { left: 0; }
+  .more-albums .owl-nav button.owl-next { right: 0; }
+}
+@media (max-width: 575px) { .more-albums .album-title { font-size: 32px; } .more-albums .album-desc { min-height: 0; } }
