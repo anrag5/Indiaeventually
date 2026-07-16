@@ -104,7 +104,7 @@
               <li><a href="#whatweoffer" class="mobiel_viewClick">What We Offer </a></li>
               <!-- <li><a href="#Snapshoot">SnapShot</a></li> -->
               <li><a href="#project" class="mobiel_viewClick">Recent Project</a></li>
-              <li><a href="contactus.php">Contact Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
               <div class="mobile-logo">
                 <a href="index.php">
                   <img src="./assets/img/logo300x-100.png" alt="" class="img-fluid" width="100" /></a>
@@ -1864,7 +1864,7 @@
                 <a href="#gallery"><i class="fa-solid fa-paper-plane"></i> GALLERY</a>
               </li>
               <li>
-                <a href="contactus.php"><i class="fa-solid fa-paper-plane"></i> CONTACT US</a>
+                <a href="contactus.html"><i class="fa-solid fa-paper-plane"></i> CONTACT US</a>
               </li>
             </ul>
           </div>
