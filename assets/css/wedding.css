@@ -179,6 +179,17 @@
    inner + gold gradient border, overlapping a rectangular
    image with leaf/flower corner decorations.
    ===================================================== */
+/* smooth in-page navigation */
+html { scroll-behavior: smooth; }
+
+/* offset anchor targets so the fixed navbar doesn't hide the section heading */
+#bookEvent,
+#weOffer,
+#albums,
+#couples {
+  scroll-margin-top: 90px; /* ~fixed navbar height */
+}
+
 .wedding-listing {
   background: #FBFAF5;
   position: relative;

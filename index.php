@@ -314,7 +314,7 @@
           </div>
         </div>
 
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-3">
+        <!-- <div class="col-xl-4 col-lg-4 col-md-6 mb-3">
           <div class="offer_card">
             <img src="./assets/img/wedding-img/wedding22.jpeg" alt="" />
             <div class="tagline-card">
@@ -327,7 +327,8 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
+
         <div class="col-xl-4 col-lg-4 col-md-6 mb-3">
           <div class="offer_card">
             <img src="./assets/img/production services 6-min.jpg" alt="" />
@@ -497,7 +498,7 @@
                   <h2>8th July 2026</h2>
                 </div>
                 <a href="aayka-mahakumbh.html">
-                  <p>AAYKA Waterproofing and Constructions Standardisation Mahakumbh 2026 at India Habitat Centre </p>
+                  <p>AAYKA Waterproofing and Constructions Standardisation Mahakumbh 2026  </p>
                 </a>
               </div>
             </div>
@@ -1219,7 +1220,7 @@
           </div>
         </div>
 
-        <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <div class="wedding-card">
             <a href="wedding-gallery.html" class="wedding-card-link">
               <div class="wedding-card-img">
@@ -1233,7 +1234,8 @@
               </div>
             </a>
           </div>
-        </div>
+        </div> -->
+
       </div>
 
       <div class="row">
@@ -1258,12 +1260,12 @@
                 Moments We <span class="u-line">Created</span>
               </h1>
             </div>
-            <p class="py-3 moments-desc">
-              Every celebration tells a story. Explore our favourite wedding moments captured with love,
-              emotions and unforgettable memories.
+             <p class="py-3 moments-desc">
+             Every celebration tells a unique story, and every detail reflects the dreams of our couples. From intimate ceremonies to grand wedding celebrations, we create unforgettable moments filled with love, elegance, and timeless memories.
             </p>
+            <p class="py-2 moments-desc">Discover more beautiful weddings, behind-the-scenes moments, and inspiring celebrations on our Instagram.</p>
             <a href="https://www.instagram.com/theweddingkhwaab/" target="_blank" rel="noopener" class="insta-know">
-              <i class="fa-brands fa-instagram"></i> Know More
+              <i class="fa-brands fa-instagram"></i> Explore Our Instagram
             </a>
           </div>
         </div>
