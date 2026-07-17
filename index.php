@@ -1261,9 +1261,9 @@
               </h1>
             </div>
              <p class="py-3 moments-desc">
-             Every celebration tells a unique story, and every detail reflects the dreams of our couples. From intimate ceremonies to grand wedding celebrations, we create unforgettable moments filled with love, elegance, and timeless memories.
+            Every wedding we create is a reflection of love, elegance, and unforgettable memories. From breathtaking décor and heartfelt ceremonies to joyful celebrations, every moment is thoughtfully planned to tell a unique story. Explore our gallery and experience the beautiful journeys we've had the privilege to create.
             </p>
-            <p class="py-2 moments-desc">Discover more beautiful weddings, behind-the-scenes moments, and inspiring celebrations on our Instagram.</p>
+            <p class="py-2 moments-desc">Want to see even more real weddings, behind-the-scenes moments, décor inspiration, and our latest celebrations? Follow us on Instagram and be part of our journey</p>
             <a href="https://www.instagram.com/theweddingkhwaab/" target="_blank" rel="noopener" class="insta-know">
               <i class="fa-brands fa-instagram"></i> Explore Our Instagram
             </a>
@@ -1286,7 +1286,7 @@
       <div class="row">
         <div class="col-xl-12">
           <div class="btn_home text-center mt-5">
-            <a href="wedding_gallery.html" class="btn btn_cstom">View Wedding Gallery</a>
+            <a href="wedding_gallery.html" class="btn btn_cstom">Explore Our Wedding Gallery</a>
           </div>
         </div>
       </div>
