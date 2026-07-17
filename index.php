@@ -94,19 +94,19 @@
       <div class="row">
         <div class="main-dv">
           <div class="left_logo">
-            <a href="index.php">
+            <a href="index.html">
               <img src="./assets/img/logo300x-100.png" alt="" class="img-fluid" width="180" /></a>
           </div>
           <div class="rigt-links">
             <ul class="position-relative">
-              <li><a href="index.php" class="active_link">Home</a></li>
+              <li><a href="index.html" class="active_link">Home</a></li>
               <li><a href="#Aboutus" class="mobiel_viewClick">About US</a></li>
               <li><a href="#whatweoffer" class="mobiel_viewClick">What We Offer </a></li>
               <!-- <li><a href="#Snapshoot">SnapShot</a></li> -->
               <li><a href="#project" class="mobiel_viewClick">Recent Project</a></li>
               <li><a href="contactus.html">Contact Us</a></li>
               <div class="mobile-logo">
-                <a href="index.php">
+                <a href="index.html">
                   <img src="./assets/img/logo300x-100.png" alt="" class="img-fluid" width="100" /></a>
               </div>
             </ul>
