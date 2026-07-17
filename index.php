@@ -173,7 +173,7 @@
               <p class="pb-3">
                 Welcome to INDIA eventUally Pvt. Ltd. (IEPL), your trusted partner for exceptional event management
                 solutions with a foundation laid by seasoned professionals in 2012. We are also a member of Event and
-                Entertainment Management Association (EEMA). We have become a reputable name in the industry, offering
+                Business Network International (BNI). We have become a reputable name in the industry, offering
                 comprehensive 360-degree services.
               </p>
               <p class="pb-3">
@@ -1177,7 +1177,7 @@
               </div>
               <div class="wedding-card-body">
                 <h5 class="wedding-card-title">Ishan &amp; Purwa's Wedding Reception</h5>
-                <span class="color_red wedding-readmore">4th jul 2026</span>
+                <span class="color_red wedding-readmore">4th July 2026</span>
                 <p class="wedding-card-loc"><i class="fa-solid fa-location-dot"></i> Ambria Pushpanjali Farms</p>
                 <p class="wedding-card-desc">An elegant reception celebrating a beautiful new beginning.</p>
                 <span class="color_red wedding-readmore">Read More</span>
@@ -1194,7 +1194,7 @@
               </div>
               <div class="wedding-card-body">
                 <h5 class="wedding-card-title">Akanksha &amp; Chaitanya's Wedding</h5>
-                <span class="color_red wedding-readmore">18th & 20 Dec 2024</span>
+                <span class="color_red wedding-readmore">18 - 20th Dec 2024</span>
                 <p class="wedding-card-loc"><i class="fa-solid fa-location-dot"></i> Westin Resort &amp; Spa, Sohna</p>
                 <p class="wedding-card-desc">A luxurious destination wedding filled with grandeur and joy.</p>
                 <span class="color_red wedding-readmore">Read More</span>
@@ -1211,7 +1211,7 @@
               </div>
               <div class="wedding-card-body">
                 <h5 class="wedding-card-title">Renu &amp; Damodar Silver Jubilee</h5>
-                <span class="color_red wedding-readmore">3rd & 4th Dec 2023</span>
+                <span class="color_red wedding-readmore">3 - 4th Dec 2023</span>
                 <p class="wedding-card-loc"><i class="fa-solid fa-location-dot"></i> Taj Gateway Resort, Gurugram</p>
                 <p class="wedding-card-desc">A regal silver jubilee celebration crafted with heartfelt detail.</p>
                 <span class="color_red wedding-readmore">Read More</span>
