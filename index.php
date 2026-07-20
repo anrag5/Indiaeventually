@@ -1261,9 +1261,10 @@
               </h1>
             </div>
              <p class="py-3 moments-desc">
-            Every wedding we create is a reflection of love, elegance, and unforgettable memories. From breathtaking décor and heartfelt ceremonies to joyful celebrations, every moment is thoughtfully planned to tell a unique story. Explore our gallery and experience the beautiful journeys we've had the privilege to create.
+            Every celebration is a beautiful story of love and timeless memories. With elegance, creativity, and heartfelt attention to every detail, we bring your dream wedding to life. Explore our gallery and experience the beautiful journeys we've had the privilege to create.
             </p>
-            <p class="py-2 moments-desc">Want to see even more real weddings, behind-the-scenes moments, décor inspiration, and our latest celebrations? Follow us on Instagram and be part of our journey</p>
+            <p class="py-2 moments-desc">The Wedding Khawb
+Follow us on Instagram for real wedding stories, elegant social events, breathtaking décor inspiration, behind-the-scenes moments, and exclusive celebration highlights. Whether you're planning your big day or simply looking for ideas, The Wedding Khawb is here to inspire you and help turn your dream wedding into a beautiful reality.</p>
             <a href="https://www.instagram.com/theweddingkhwaab/" target="_blank" rel="noopener" class="insta-know">
               <i class="fa-brands fa-instagram"></i> Explore Our Instagram
             </a>
