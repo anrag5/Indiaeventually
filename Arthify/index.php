@@ -322,7 +322,7 @@
             <div class="card-o-content">
               <p>
                 We are a comprehensive Wedding Planning Agency from Delhi. We expertise in planning, designing and
-                organizing your wedding events. We deliver the best solution for venue, concepts...<a href="wedding-events.html" class="color_red">Read more</a>
+                organizing your wedding events. We deliver the best solution for venue, concepts...<a href="recentwedding.html" class="color_red">Read more</a>
               </p>
             </div>
           </div>
@@ -1642,7 +1642,7 @@
                 <a href="production-services.html"><i class="fa-solid fa-paper-plane"></i> PRODUCTION SERVICES</a>
               </li>
               <li>
-                <a href="wedding-events.html"><i class="fa-solid fa-paper-plane"></i> Wedding Events</a>
+                <a href="recentwedding.html"><i class="fa-solid fa-paper-plane"></i> Wedding Events</a>
               </li>
             </ul>
           </div>
