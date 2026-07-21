@@ -1774,7 +1774,7 @@
               <h3>  Actor </h3>
             </div> -->
           </div>
-          <div class="testimony_box position-relative">
+         <div class="testimony_box position-relative">
             <a data-fancybox="" href="assets/img/Trackier/IE - testmonial.mp4" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Trackier/IMG_1.jpeg" style="height: 400px;">
               <div class="play-btn" href="#"></div>
