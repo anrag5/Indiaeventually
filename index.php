@@ -1222,7 +1222,7 @@
 
         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <div class="wedding-card">
-            <a href="wedding-gallery.html" class="wedding-card-link">
+            <a href="wedding_gallery.html" class="wedding-card-link">
               <div class="wedding-card-img">
                 <img src="assets/img/wedding-img/w10.jpeg" alt="Grand floral wedding mandap">
               </div>
