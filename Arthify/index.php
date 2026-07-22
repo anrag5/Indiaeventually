@@ -171,8 +171,7 @@
             <div class="desc py-3">
               <p class="pb-3">
                 Welcome to INDIA eventUally Pvt. Ltd. (IEPL), your trusted partner for exceptional event management
-                solutions with a foundation laid by seasoned professionals in 2012. We are also a member of Event and
-                Entertainment Management Association (EEMA). We have become a reputable name in the industry, offering
+                solutions with a foundation laid by seasoned professionals in 2012. We are also a member of Business Network International (BNI). We have become a reputable name in the industry, offering
                 comprehensive 360-degree services.
               </p>
               <p class="pb-3">
