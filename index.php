@@ -1675,7 +1675,7 @@
             </div>
           </div>
           <div class="testimony_box position-relative">
-            <a data-fancybox="" href="assets/img/testimonials1.mp4" class="position-relative">
+            <a data-fancybox="" href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784714763/testimonials1_f5gris.mp4" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/sarjeeta.jpeg" style="height: 400px;">
               <div class="play-btn" href="#"></div>
             </a>
@@ -1685,7 +1685,7 @@
             </div>
           </div>
           <div class="testimony_box position-relative">
-            <a data-fancybox="" href="assets/img/testimoni2.mp4" class="position-relative">
+            <a data-fancybox="" href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784714693/testimoni2_jn7oeq.mp4" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/anandranganthan.jpeg" style="height: 400px;">
               <div class="play-btn" href="#"></div>
             </a>
@@ -1765,7 +1765,7 @@
             </div> -->
           </div>
           <div class="testimony_box position-relative">
-            <a href="assets/img/testimonials5.mp4" target="_blank" class="position-relative">
+            <a href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784714693/testimonials5_x59gnu.mp4" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/testimonyimg.jpeg" style="height: 400px;">
               <div class="play-btn" href="#"></div>
             </a>
@@ -1775,7 +1775,7 @@
             </div> -->
           </div>
          <div class="testimony_box position-relative">
-            <a data-fancybox="" href="assets/img/Trackier/IE - testmonial.mp4" class="position-relative">
+            <a data-fancybox="" href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784715663/IE_-_testmonial_nbkoch.mp4" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Trackier/IMG_1.jpeg" style="height: 400px;">
               <div class="play-btn" href="#"></div>
             </a>
