@@ -145,12 +145,15 @@ ${enquiry}
     });
   } catch (error) {
 
-  console.error("MAIL ERROR:", error);
+    console.error(error);
 
-  return res.status(500).json({
-    success: false,
-    message: error.message
-  });
+    return res.status(500).json({
+        success: false,
+        message: error.message,
+        code: error.code,
+        responseCode: error.responseCode,
+        response: error.response
+    });
 
 }
 };
