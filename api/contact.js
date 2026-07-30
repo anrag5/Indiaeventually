@@ -10,7 +10,10 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+   const body =
+  typeof req.body === "string"
+    ? JSON.parse(req.body)
+    : (req.body || {});
 
     const { name, email, mobile, enquiry } = body;
 
