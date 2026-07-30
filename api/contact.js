@@ -144,11 +144,13 @@ ${enquiry}
         "Thank you! Your enquiry has been submitted successfully.",
     });
   } catch (error) {
-    console.error(error);
 
-    return res.status(500).json({
-      success: false,
-      message: "Unable to send enquiry.",
-    });
-  }
+  console.error("MAIL ERROR:", error);
+
+  return res.status(500).json({
+    success: false,
+    message: error.message
+  });
+
+}
 };
