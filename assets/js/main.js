@@ -197,6 +197,8 @@ $(document).ready(function(){
 
     items.slice(perPage).hide();
 
+    if ($.fn.pagination) {
+
     $('#pagination-container').pagination({
         items: numItems,
         itemsOnPage: perPage,
@@ -208,6 +210,19 @@ $(document).ready(function(){
             items.hide().slice(showFrom, showTo).show();
         }
     });
+
+}
+    // $('#pagination-container').pagination({
+    //     items: numItems,
+    //     itemsOnPage: perPage,
+    //     prevText: "&laquo;",
+    //     nextText: "&raquo;",
+    //     onPageClick: function (pageNumber) {
+    //         var showFrom = perPage * (pageNumber - 1);
+    //         var showTo = showFrom + perPage;
+    //         items.hide().slice(showFrom, showTo).show();
+    //     }
+    // });
 
 
       
@@ -232,24 +247,43 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Load more cards on button click
-    loadMoreBtn.addEventListener('click', function () {
-        cardsToShow += increment;
-        for (let i = 0; i < cards.length; i++) {
-            if (i < cardsToShow) {
-                cards[i].style.display = 'block';
-            }
-        }
+    if(loadMoreBtn){
 
-        // Hide Load More button if all cards are displayed
-        if (cardsToShow >= cards.length) {
-            loadMoreBtn.style.display = 'none';
+    loadMoreBtn.addEventListener("click", function () {
+
+    cardsToShow += increment;
+
+    for (let i = 0; i < cards.length; i++) {
+        if (i < cardsToShow) {
+            cards[i].style.display = "block";
         }
+    }
+
+    if (cardsToShow >= cards.length) {
+        loadMoreBtn.style.display = "none";
+    }
+});
+
+}
+    // loadMoreBtn.addEventListener('click', function () {
+    //     cardsToShow += increment;
+    //     for (let i = 0; i < cards.length; i++) {
+    //         if (i < cardsToShow) {
+    //             cards[i].style.display = 'block';
+    //         }
+    //     }
+
+    //     // Hide Load More button if all cards are displayed
+    //     if (cardsToShow >= cards.length) {
+    //         loadMoreBtn.style.display = 'none';
+    //     }
+    // });
+});
+
+
+if (typeof AOS !== "undefined") {
+    AOS.init({
+        offset: 120,
+        delay: 0
     });
-});
-
-
-AOS.init({
-
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-});
+}
