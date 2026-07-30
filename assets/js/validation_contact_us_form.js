@@ -1,7 +1,11 @@
+AOS.init({
+    offset:120,
+    delay:0
+});
 
-(function () {
-    emailjs.init("Jz_Ekg4Ow3jN6NjCg"); // Public Key
-})();
+// -----------------------------
+// Contact Forms
+// -----------------------------
 
 $(document).ready(function () {
 
@@ -10,153 +14,179 @@ $(document).ready(function () {
         if (!$(formId).length) return;
 
         $(formId).validate({
-          rules: {
-            name: {
-              required: true,
-              minlength: 3,
+
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3
+                },
+                mobile: {
+                    required: true,
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                enquiry: {
+                    required: true,
+                    minlength: 10
+                }
             },
-            mobile: {
-              required: true,
-              digits: true,
-              minlength: 10,
-              maxlength: 10,
+
+            messages: {
+                name: {
+                    required: "Please enter your name",
+                    minlength: "Your name must consist of at least 3 characters"
+                },
+                mobile: {
+                    required: "Please enter your contact number",
+                    digits: "Please enter only digits",
+                    minlength: "Please enter a valid 10 digit mobile number",
+                    maxlength: "Please enter a valid 10 digit mobile number"
+                },
+                email: {
+                    required: "Please enter your email",
+                    email: "Please enter a valid email address"
+                },
+                enquiry: {
+                    required: "Please enter your enquiry",
+                    minlength: "Please enter at least 10 characters"
+                }
             },
-            email: {
-              required: true,
-              email: true,
+
+            errorPlacement: function (error, element) {
+
+                var errorId = element.attr("id") + "_err";
+
+                $(element)
+                    .closest("form")
+                    .find("#" + errorId)
+                    .html(error);
+
             },
-            enquiry: {
-              required: true,
-              minlength: 10,
+
+            highlight: function (element) {
+
+                $(element).addClass("invalid").removeClass("valid");
+
             },
-          },
 
-          messages: {
-            name: {
-              required: "Please enter your name",
-              minlength: "Your name must consist of at least 3 characters",
+            unhighlight: function (element) {
+
+                $(element).addClass("valid").removeClass("invalid");
+
             },
-            mobile: {
-              required: "Please enter your contact number",
-              digits: "Please enter only digits",
-              minlength: "Please enter a valid 10 digit mobile number",
-              maxlength: "Please enter a valid 10 digit mobile number",
-            },
-            email: {
-              required: "Please enter your email",
-              email: "Please enter a valid email address",
-            },
-            enquiry: {
-              required: "Please enter your enquiry",
-              minlength: "Please enter at least 10 characters",
-            },
-          },
 
-          errorPlacement: function (error, element) {
-            var errorId = element.attr("id") + "_err";
+            submitHandler: function (form) {
 
-            $(element)
-              .closest("form")
-              .find("#" + errorId)
-              .html(error);
-          },
+                var $form = $(form);
 
-          highlight: function (element) {
-            $(element).addClass("invalid").removeClass("valid");
-          },
+                var submitButton = $form.find("#submit-button");
+                var buttonText = $form.find("#button-text");
+                var loader = $form.find("#loader");
+                var responseBox = $form.find("#response-message");
+                var inputButtonDiv = $form.find("#input_button_div");
 
-          unhighlight: function (element) {
-            $(element).addClass("valid").removeClass("invalid");
-          },
+                submitButton.prop("disabled", true);
+                buttonText.hide();
 
-          submitHandler: function (form) {
-            var $form = $(form);
+                if (inputButtonDiv.length) {
+                    inputButtonDiv.hide();
+                }
 
-            var submitButton = $form.find("#submit-button");
-            var buttonText = $form.find("#button-text");
-            var loader = $form.find("#loader");
-            var responseBox = $form.find("#response-message");
-            var inputButtonDiv = $form.find("#input_button_div");
+                loader.show();
 
-            submitButton.prop("disabled", true);
+                var formData = {
+                    name: $form.find('[name="name"]').val().trim(),
+                    email: $form.find('[name="email"]').val().trim(),
+                    mobile: $form.find('[name="mobile"]').val().trim(),
+                    enquiry: $form.find('[name="enquiry"]').val().trim()
+                };
 
-            buttonText.hide();
+                fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(formData)
+                })
 
-            if (inputButtonDiv.length) {
-              inputButtonDiv.hide();
+                .then(async function (response) {
+
+                    const result = await response.json();
+
+                    loader.hide();
+                    submitButton.prop("disabled", false);
+                    buttonText.show();
+
+                    if (inputButtonDiv.length) {
+                        inputButtonDiv.show();
+                    }
+
+                    if (result.success) {
+
+                        responseBox.html(
+                            '<div class="alert alert-success">' +
+                            result.message +
+                            '</div>'
+                        );
+
+                        form.reset();
+
+                        $form.find(".valid").removeClass("valid");
+
+                    } else {
+
+                        responseBox.html(
+                            '<div class="alert alert-danger">' +
+                            result.message +
+                            '</div>'
+                        );
+
+                    }
+
+                    setTimeout(function () {
+                        responseBox.html("");
+                    }, 5000);
+
+                })
+
+                .catch(function (error) {
+
+                    console.error(error);
+
+                    loader.hide();
+
+                    submitButton.prop("disabled", false);
+
+                    buttonText.show();
+
+                    if (inputButtonDiv.length) {
+                        inputButtonDiv.show();
+                    }
+
+                    responseBox.html(
+                        '<div class="alert alert-danger">Unable to send enquiry. Please try again.</div>'
+                    );
+
+                });
+
             }
 
-            loader.show();
-
-            var templateParams = {
-              name: $form.find('[name="name"]').val(),
-
-              email: $form.find('[name="email"]').val(),
-
-              mobile: $form.find('[name="mobile"]').val(),
-
-              enquiry: $form.find('[name="enquiry"]').val(),
-            };
-
-            emailjs
-              .send("service_sx1c4ro", "template_nve642h", templateParams)
-
-              .then(function () {
-                loader.hide();
-
-                submitButton.prop("disabled", false);
-
-                buttonText.show();
-
-                if (inputButtonDiv.length) {
-                  inputButtonDiv.show();
-                }
-
-                responseBox.html(
-                  '<div class="alert alert-success">Thank you! Your enquiry has been submitted successfully.</div>',
-                );
-
-                form.reset();
-
-                $form.find(".valid").removeClass("valid");
-
-                setTimeout(function () {
-                  responseBox.html("");
-                }, 5000);
-              })
-
-              .catch(function (error) {
-                console.log(error);
-
-                loader.hide();
-
-                submitButton.prop("disabled", false);
-
-                buttonText.show();
-
-                if (inputButtonDiv.length) {
-                  inputButtonDiv.show();
-                }
-
-                responseBox.html(
-                  '<div class="alert alert-danger">Unable to send enquiry. Please try again.</div>',
-                );
-              });
-          },
         });
 
-        $(formId).find("#name,#mobile,#email,#enquiry").on("keyup blur", function () {
-
-            $(this).valid();
-
-        });
+        $(formId)
+            .find("#name,#mobile,#email,#enquiry")
+            .on("keyup blur", function () {
+                $(this).valid();
+            });
 
     }
 
-    // Contact Us Form
     initializeForm("#contact-us-form");
-
-    // Get In Touch Form
     initializeForm("#get-in-touch-form");
 
 });
