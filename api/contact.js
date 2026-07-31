@@ -56,6 +56,8 @@ module.exports = async (req, res) => {
     // ----------------------------
     // SMTP Transport
     // ----------------------------
+    console.log("SMTP_USER:", process.env.SMTP_USER);
+    console.log("SMTP_PASS length:", process.env.SMTP_PASS?.length);
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT),
