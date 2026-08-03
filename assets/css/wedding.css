@@ -1,3 +1,31 @@
+/* ========== Owl Carousel Navigation ========== */
+.cleints_slider .owl-nav {
+    display: block !important;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cleints_slider .owl-nav button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50% !important;
+    background: #fa4 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    margin: 0 8px;
+    transition: .3s;
+}
+
+.cleints_slider .owl-nav button:hover {
+    background: linear-gradient(90deg, rgb(255, 170, 68) 15%, rgb(243, 34, 170) 100%) !important;
+    color: #000 !important;
+}
+
+.cleints_slider .owl-nav .disabled {
+    opacity: .5;
+}
+
+
 /* =====================================================
    Wedding & Social Events  +  Moments We Created
    Scoped styles for the homepage. Reuses the site palette
