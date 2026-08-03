@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "nodemailer": "^9.0.3"
   }
 }
