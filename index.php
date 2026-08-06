@@ -1805,12 +1805,12 @@
               <h3> Leading Pharma Company </h3>
             </div>
           </div>
-           <div class="testimony_box position-relative">
+           <!-- <div class="testimony_box position-relative">
             <a href="https://www.instagram.com/p/reel/DbVZux1TR2U/?igsh=MXIwcXBtdmE1dHR2MQ%3D%3D" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Couple1.png" style="height: 400px;">
               <div class="play-btn" href="#"></div>
             </a>
-          </div>
+          </div> -->
            <div class="testimony_box position-relative">
             <a href="https://www.instagram.com/theweddingkhwaab/reel/DbVY8i9TDk1/" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/front.png" style="height: 400px;">
