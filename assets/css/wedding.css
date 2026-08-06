@@ -1,3 +1,16 @@
+ .play-btn {
+    width: 80px;
+    height:80px;
+    background: radial-gradient( rgba(255, 0, 128, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+    border-radius: 50%;
+    display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+  }
+
 /* ========== Owl Carousel Navigation ========== */
 .cleints_slider .owl-nav {
     display: block !important;
@@ -214,8 +227,11 @@ html { scroll-behavior: smooth; }
 #bookEvent,
 #weOffer,
 #albums,
-#couples {
-  scroll-margin-top: 90px; /* ~fixed navbar height */
+#couples,
+#project,
+#weOffer,
+#whatweoffer {
+  scroll-margin-top: 150px; /* ~fixed navbar height */
 }
 
 .wedding-listing {

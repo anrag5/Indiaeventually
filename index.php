@@ -1901,7 +1901,7 @@
 
             <ul>
               <li>
-                <a href="index.php">
+                <a href="index.html">
                   <i class="fa-sharp fa-solid fa-paper-plane"></i> Home</a>
               </li>
               <li>

@@ -233,26 +233,26 @@
                         <div class="bordedr-setbx">
                             <h3 class="be-card-title">Book Event</h3>
                             <p class="be-card-sub">We would love to be part of your celebration</p>
-                            <form>
+                            <form id="bookEventForm" method="POST">
                                 <div class="be-field">
                                     <label class="be-label">Name</label>
-                                    <input type="text" class="be-input" placeholder="Your full name" />
+                                    <input type="text" class="be-input" placeholder="Your full name" name="name" id="name" />
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Email</label>
-                                    <input type="email" class="be-input" placeholder="you@example.com" />
+                                    <input type="email" class="be-input" placeholder="you@example.com" name="email" id="email" />
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Phone Number</label>
-                                    <input type="text" class="be-input" placeholder="+91 00000 00000" />
+                                    <input type="text" class="be-input" placeholder="+91 00000 00000" name="mobile" id="mobile" />
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Event Date</label>
-                                    <input type="date" class="be-input" />
+                                    <input type="date" class="be-input" name="eventDate" id="eventDate" />
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Event Type</label>
-                                    <select class="be-input">
+                                    <select class="be-input" name="eventType" id="eventType">
                                         <option value="" selected disabled>Select event type</option>
                                         <option>Wedding</option>
                                         <option>Reception</option>
@@ -265,11 +265,11 @@
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Guest Count</label>
-                                    <input type="number" class="be-input" min="1" placeholder="Approx. number of guests" />
+                                    <input type="number" class="be-input" min="1" placeholder="Approx. number of guests" name="guestCount" id="guestCount" />
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Message</label>
-                                    <textarea class="be-input" placeholder="Tell us about your event"></textarea>
+                                    <textarea class="be-input" placeholder="Tell us about your event" name="enquiry" id="enquiry"></textarea>
                                 </div>
                                 <div class="be-submit">
                                     <button type="submit" class="knowmoreBtn">Book Now</button>
@@ -397,6 +397,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="ishanpurwa/assets/js/script.js"></script>
+    <script src="/assets/js/book-event.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
