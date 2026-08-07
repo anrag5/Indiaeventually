@@ -234,25 +234,30 @@
                             <h3 class="be-card-title">Book Event</h3>
                             <p class="be-card-sub">We would love to be part of your celebration</p>
                             <form id="bookEventForm" method="POST">
+                                <div id="book-response-message"></div>
                                 <div class="be-field">
                                     <label class="be-label">Name</label>
-                                    <input type="text" class="be-input" placeholder="Your full name" name="name" id="name" />
+                                    <input type="text" class="be-input" placeholder="Your full name" name="name" id="be_name" />
+                                    <span id="be_name_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Email</label>
-                                    <input type="email" class="be-input" placeholder="you@example.com" name="email" id="email" />
+                                    <input type="email" class="be-input" placeholder="you@example.com" name="email" id="be_email" />
+                                    <span id="be_email_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Phone Number</label>
-                                    <input type="text" class="be-input" placeholder="+91 00000 00000" name="mobile" id="mobile" />
+                                    <input type="text" class="be-input" placeholder="+91 00000 00000" name="mobile" id="be_mobile" />
+                                    <span id="be_mobile_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Event Date</label>
-                                    <input type="date" class="be-input" name="eventDate" id="eventDate" />
+                                    <input type="date" class="be-input" name="eventDate" id="be_eventDate" />
+                                    <span id="be_eventDate_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Event Type</label>
-                                    <select class="be-input" name="eventType" id="eventType">
+                                    <select class="be-input" name="eventType" id="be_eventType">
                                         <option value="" selected disabled>Select event type</option>
                                         <option>Wedding</option>
                                         <option>Reception</option>
@@ -262,17 +267,23 @@
                                         <option>Anniversary</option>
                                         <option>Other</option>
                                     </select>
+                                    <span id="be_eventType_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Guest Count</label>
-                                    <input type="number" class="be-input" min="1" placeholder="Approx. number of guests" name="guestCount" id="guestCount" />
+                                    <input type="number" class="be-input" min="1" placeholder="Approx. number of guests" name="guestCount" id="be_guestCount" />
+                                    <span id="be_guestCount_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-field">
                                     <label class="be-label">Message</label>
-                                    <textarea class="be-input" placeholder="Tell us about your event" name="enquiry" id="enquiry"></textarea>
+                                    <textarea class="be-input" placeholder="Tell us about your event" name="enquiry" id="be_enquiry"></textarea>
+                                    <span id="be_enquiry_err" class="text-danger"></span>
                                 </div>
                                 <div class="be-submit">
-                                    <button type="submit" class="knowmoreBtn">Book Now</button>
+                                    <button type="submit" class="knowmoreBtn" id="book-submit-button">
+                                        <span id="book-button-text">Book Now</span>
+                                        <div id="book-loader" class="loader" style="display:none"></div>
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -397,7 +408,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="ishanpurwa/assets/js/script.js"></script>
-    <script src="/assets/js/book-event.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="assets/js/validation_book_event.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>

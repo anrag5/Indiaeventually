@@ -71,49 +71,43 @@ module.exports = async (req, res) => {
     // ----------------------------
     // Email HTML
     // ----------------------------
-    const html = `
-      <div style="font-family:Arial,sans-serif;padding:20px">
-        <h2 style="color:#0c4a6e">
-          New Contact Enquiry
-        </h2>
+          const html = `
+        <div style="font-family: Arial, sans-serif; color:#333; line-height:1.7;">
 
-        <table
-          cellpadding="10"
-          cellspacing="0"
-          border="1"
-          style="border-collapse:collapse;width:100%"
-        >
-          <tr>
-            <td><strong>Name</strong></td>
-            <td>${name}</td>
-          </tr>
+          <h2 style="color:#B17014;">New Contact Enquiry</h2>
 
-          <tr>
-            <td><strong>Email</strong></td>
-            <td>${email}</td>
-          </tr>
+          <p>Hello Team,</p>
 
-          <tr>
-            <td><strong>Mobile</strong></td>
-            <td>${mobile}</td>
-          </tr>
+          <p>You have received a new enquiry from the India Eventually website.</p>
 
-          <tr>
-            <td><strong>Enquiry</strong></td>
-            <td>${enquiry}</td>
-          </tr>
+          <p><strong>Name:</strong> ${name}</p>
 
-          <tr>
-            <td><strong>Date</strong></td>
-            <td>${new Date().toLocaleString("en-IN", {
+          <p><strong>Email:</strong> ${email}</p>
+
+          <p><strong>Mobile:</strong> ${mobile}</p>
+
+          <p><strong>Enquiry:</strong></p>
+
+          <p style="padding:12px; background:#f8f8f8; border-left:4px solid #B17014;">
+            ${enquiry}
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Submitted On:</strong>
+            ${new Date().toLocaleString("en-IN", {
               dateStyle: "medium",
               timeStyle: "short",
-            })}</td>
-          </tr>
-        </table>
+            })}
+          </p>
 
-      </div>
-    `;
+          <br>
+
+          <p>Regards,<br><strong>India Eventually Website</strong></p>
+
+        </div>
+        `;
 
     // ----------------------------
     // Send Mail
@@ -126,18 +120,18 @@ module.exports = async (req, res) => {
       subject: "New Contact Enquiry - India Eventually",
 
       text: `
-Name: ${name}
+          Name: ${name}
 
-Email: ${email}
+          Email: ${email}
 
-Mobile: ${mobile}
+          Mobile: ${mobile}
 
-Enquiry:
+          Message:
 
-${enquiry}
-      `,
+          ${enquiry}
+`,
 
-      html,
+                html,
     });
 
     return res.status(200).json({
