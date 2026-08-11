@@ -107,6 +107,10 @@ $(document).ready(function () {
                 var responseBox = $form.find("#book-response-message");
                 var inputButtonDiv = $form.find("#input_button_div");
 
+                // -----------------------------
+                // Disable button while submitting
+                // -----------------------------
+
                 if (submitButton.length) {
                     submitButton.prop("disabled", true);
                 }
@@ -149,21 +153,50 @@ $(document).ready(function () {
 
                 .then(async function (response) {
 
-                    const result = await response.json();
+                    var result;
 
-                    if (loader.length) loader.hide();
+                    try {
+
+                        result = await response.json();
+
+                    } catch (error) {
+
+                        console.error("Invalid API response:", error);
+
+                        throw new Error("Invalid server response");
+
+                    }
+
+                    console.log("Book Event Response:", result);
+
+                    // -----------------------------
+                    // Always restore button
+                    // -----------------------------
+
+                    if (loader.length) {
+                        loader.hide();
+                    }
 
                     if (submitButton.length) {
+
+                        submitButton.css("display", "");
+                        submitButton.show();
                         submitButton.prop("disabled", false);
+
                     }
 
                     if (buttonText.length) {
+                        buttonText.css("display", "");
                         buttonText.show();
                     }
 
                     if (inputButtonDiv.length) {
                         inputButtonDiv.show();
                     }
+
+                    // -----------------------------
+                    // Successful submission
+                    // -----------------------------
 
                     if (result.success) {
 
@@ -185,17 +218,72 @@ $(document).ready(function () {
 
                         }
 
+                        // -----------------------------
+                        // RESET FORM
+                        // -----------------------------
+
                         form.reset();
 
+                        // Clear all input fields manually
+                        $form.find('[name="name"]').val("");
+                        $form.find('[name="email"]').val("");
+                        $form.find('[name="mobile"]').val("");
+                        $form.find('[name="eventDate"]').val("");
+                        $form.find('[name="eventType"]').val("");
+                        $form.find('[name="guestCount"]').val("");
+                        $form.find('[name="enquiry"]').val("");
+
+                        // -----------------------------
+                        // Reset validation
+                        // -----------------------------
+
+                        $form.validate().resetForm();
+
+                        // Remove validation classes
                         $form.find(".valid").removeClass("valid");
+                        $form.find(".invalid").removeClass("invalid");
+
+                        // Clear validation error messages
+                        $form.find(".text-danger").html("");
+
+                        // -----------------------------
+                        // Show button again
+                        // -----------------------------
+
+                        if (submitButton.length) {
+
+                            submitButton.css("display", "");
+                            submitButton.show();
+                            submitButton.prop("disabled", false);
+
+                        }
+
+                        if (buttonText.length) {
+
+                            buttonText.css("display", "");
+                            buttonText.show();
+
+                        }
+
+                        if (loader.length) {
+                            loader.hide();
+                        }
+
+                        if (inputButtonDiv.length) {
+                            inputButtonDiv.show();
+                        }
 
                     } else {
+
+                        // -----------------------------
+                        // Submission failed
+                        // -----------------------------
 
                         if (responseBox.length) {
 
                             responseBox.html(
                                 '<div class="alert alert-danger">' +
-                                result.message +
+                                (result.message || "Unable to submit your request.") +
                                 '</div>'
                             );
 
@@ -205,8 +293,38 @@ $(document).ready(function () {
 
                         } else {
 
-                            alert(result.message);
+                            alert(
+                                result.message ||
+                                "Unable to submit your request."
+                            );
 
+                        }
+
+                        // -----------------------------
+                        // Show button again
+                        // -----------------------------
+
+                        if (submitButton.length) {
+
+                            submitButton.css("display", "");
+                            submitButton.show();
+                            submitButton.prop("disabled", false);
+
+                        }
+
+                        if (buttonText.length) {
+
+                            buttonText.css("display", "");
+                            buttonText.show();
+
+                        }
+
+                        if (loader.length) {
+                            loader.hide();
+                        }
+
+                        if (inputButtonDiv.length) {
+                            inputButtonDiv.show();
                         }
 
                     }
@@ -217,14 +335,27 @@ $(document).ready(function () {
 
                     console.error(error);
 
-                    if (loader.length) loader.hide();
+                    // -----------------------------
+                    // Restore button after error
+                    // -----------------------------
+
+                    if (loader.length) {
+                        loader.hide();
+                    }
 
                     if (submitButton.length) {
+
+                        submitButton.css("display", "");
+                        submitButton.show();
                         submitButton.prop("disabled", false);
+
                     }
 
                     if (buttonText.length) {
+
+                        buttonText.css("display", "");
                         buttonText.show();
+
                     }
 
                     if (inputButtonDiv.length) {
@@ -234,7 +365,9 @@ $(document).ready(function () {
                     if (responseBox.length) {
 
                         responseBox.html(
-                            '<div class="alert alert-danger">Unable to submit your request. Please try again.</div>'
+                            '<div class="alert alert-danger">' +
+                            'Unable to submit your request. Please try again.' +
+                            '</div>'
                         );
 
                         setTimeout(function () {
@@ -243,7 +376,9 @@ $(document).ready(function () {
 
                     } else {
 
-                        alert("Unable to submit your request. Please try again.");
+                        alert(
+                            "Unable to submit your request. Please try again."
+                        );
 
                     }
 
@@ -254,10 +389,12 @@ $(document).ready(function () {
         });
 
         $(formId)
-        .find("#be_name,#be_mobile,#be_email,#be_eventDate,#be_eventType,#be_guestCount,#be_enquiry")
-        .on("keyup blur change", function () {
-            $(this).valid();
-        });
+            .find("#be_name,#be_mobile,#be_email,#be_eventDate,#be_eventType,#be_guestCount,#be_enquiry")
+            .on("keyup blur change", function () {
+
+                $(this).valid();
+
+            });
 
     }
 

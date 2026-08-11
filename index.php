@@ -264,7 +264,7 @@
               <p>
                 Organizing Cultural Events, Fashion Shows, College Festivals,
                 and Annual Shows with end to end support i.e. concept design,
-                directing rounds of training rehearsals...<a href="Cultural-events.html" class="color_red">Read more</a>
+                directing rounds of training rehearsals...<a href="cultural-events.html" class="color_red">Read more</a>
               </p>
             </div>
           </div>
@@ -1932,7 +1932,7 @@
                   <i class="fa-sharp fa-solid fa-paper-plane"></i> MICE</a>
               </li>
               <li>
-                <a href="Cultural-events.html">
+                <a href="cultural-events.html">
                   <i class="fa-solid fa-paper-plane"></i> CULTURAL EVENTS</a>
               </li>
               <li>
