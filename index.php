@@ -526,7 +526,7 @@
         <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="generation-retreat.html">
             <div class="project_detailss">
-              <img src="assets/img/Genaration India Foundation/image5.jpeg" alt="" class="w-100">
+              <img src="assets/img/Genaration_India_Foundation/image5.jpeg" alt="" class="w-100">
 
               <div class="ptojecttitle">
                 <div class="datebx">
@@ -1174,7 +1174,7 @@
           <div class="wedding-card">
             <a href="ishanpurwa/index.html" class="wedding-card-link">
               <div class="wedding-card-img">
-                <img src="assets/img/wedding-img/Wedding%20_Reception/Couple1.png" alt="Ishan and Purwa's Wedding Reception">
+                <img src="assets/img/wedding-img/wedding_reception/Couple1.png" alt="Ishan and Purwa's Wedding Reception">
               </div>
               <div class="wedding-card-body">
                 <h5 class="wedding-card-title">Ishan &amp; Purwa's Wedding Reception</h5>
@@ -1281,7 +1281,7 @@
             <a href="https://instagram.com/theweddingkhwaab/" target="_blank" rel="noopener"><img src="./assets/img/wedding-img/wedding13.jpeg" alt="Bride portrait"></a>
             <a href="https://instagram.com/theweddingkhwaab/" target="_blank" rel="noopener"><img src="./assets/img/wedding-img/w5.jpeg" alt="Wedding venue setup"></a>
             <a href="https://instagram.com/theweddingkhwaab/" target="_blank" rel="noopener"><img src="./assets/img/wedding-img/w10.jpeg" alt="Floral wedding mandap"></a>
-            <a href="https://instagram.com/theweddingkhwaab/" target="_blank" rel="noopener"><img src="./assets/img/wedding-img/Wedding%20_Reception/Couple1.png" alt="Reception couple portrait"></a>
+            <a href="https://instagram.com/theweddingkhwaab/" target="_blank" rel="noopener"><img src="./assets/img/wedding-img/wedding_reception/Couple1.png" alt="Reception couple portrait"></a>
             <a href="https://instagram.com/theweddingkhwaab/" target="_blank" rel="noopener"><img src="./assets/img/wedding-img/wedding20.jpeg" alt="Wedding venue entrance decor"></a>
           </div>
         </div>
