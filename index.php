@@ -1738,7 +1738,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.facebook.com/reel/450465111447993" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test5.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1748,7 +1748,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.facebook.com/reel/655542766802803" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test6.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1758,7 +1758,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.facebook.com/reel/599691746080978" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test7.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1768,7 +1768,7 @@
           <div class="testimony_box position-relative">
             <a href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784714693/testimonials5_x59gnu.mp4" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/testimonyimg.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1778,7 +1778,7 @@
          <div class="testimony_box position-relative">
             <a data-fancybox="" href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784715663/IE_-_testmonial_nbkoch.mp4" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Trackier/IMG_1.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Sreejita Basu </h2>
@@ -1788,23 +1788,14 @@
           <div class="testimony_box position-relative">
             <a href="https://www.instagram.com/p/DVv4l0MEx4V/?hl=en" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/testimonial1.png" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
               <h3>  Actor </h3>
             </div> -->
           </div>
-           <div class="testimony_box position-relative">
-            <a href="https://www.instagram.com/p/DYhYkJaTJTz/?hl=en" target="_blank" class="position-relative">
-              <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Ashish-josi.png" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
-            </a>
-            <div class="testimony-designation">
-              <h2>Dr. Ashish Joshi,</h2>
-              <h3> Leading Pharma Company </h3>
-            </div>
-          </div>
+      
            <!-- <div class="testimony_box position-relative">
             <a href="https://www.instagram.com/p/reel/DbVZux1TR2U/?igsh=MXIwcXBtdmE1dHR2MQ%3D%3D" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Couple1.png" style="height: 400px;">
@@ -1814,12 +1805,23 @@
            <div class="testimony_box position-relative">
             <a href="https://www.instagram.com/theweddingkhwaab/reel/DbVY8i9TDk1/" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/front.png" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
               <h3>  Actor </h3>
             </div> -->
+          </div>
+
+          <div class="testimony_box position-relative">
+            <a href="https://www.instagram.com/p/DYhYkJaTJTz/?hl=en" target="_blank" class="position-relative">
+              <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Ashish-josi.png" style="height: 400px;">
+              <div class="testimonial-watch-btn">View Testimonial</div>
+            </a>
+            <div class="testimony-designation">
+              <h2>Dr. Ashish Joshi,</h2>
+              <h3> Leading Pharma Company </h3>
+            </div>
           </div>
 
         </div>
