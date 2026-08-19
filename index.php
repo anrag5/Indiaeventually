@@ -1678,7 +1678,7 @@
           <div class="testimony_box position-relative">
             <a data-fancybox="" href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784714763/testimonials1_f5gris.mp4" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/sarjeeta.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <div class="testimony-designation">
               <h2>Sreejita Basu </h2>
@@ -1688,7 +1688,7 @@
           <div class="testimony_box position-relative">
             <a data-fancybox="" href="https://res.cloudinary.com/fpihqb2n/video/upload/v1784714693/testimoni2_jn7oeq.mp4" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/anandranganthan.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <div class="testimony-designation">
               <h2>Prof. Anand Ranganathan </h2>
@@ -1698,7 +1698,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.instagram.com/p/C8x6d2myiww/?utm_source=ig_web_copy_link" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/anup-soni-165722042616x9.jpg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1708,7 +1708,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.facebook.com/share/r/1A7NHqKmV1/" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test222.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1718,7 +1718,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.facebook.com/reel/622436910207478" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test3.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+              <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>
@@ -1728,7 +1728,7 @@
           <div class="testimony_box position-relative">
             <a href="https://www.facebook.com/reel/466455119527968" target="_blank" class="position-relative">
               <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test4.jpeg" style="height: 400px;">
-              <div class="play-btn" href="#"></div>
+                <div class="testimonial-watch-btn">View Testimonial</div>
             </a>
             <!-- <div class="testimony-designation">
               <h2>Mr. Anup Soni,</h2>

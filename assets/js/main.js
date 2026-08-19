@@ -115,16 +115,31 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     responsiveClass: true,
-    nav: false,
-    autoHeight: true,
-    autoplay: true, // time for slides changes
-    smartSpeed: 1000, // duration of change of 1 slide
+
+    // Autoplay (keeps autoplay but preserves original layout sizes)
+    autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3000,
+    autoplayHoverPause: false,
+
+    // Navigation: enabled but only shown on larger viewports via responsive settings
+    nav: true,
     dots: false,
+    navText: [
+      '<i class="fa fa-chevron-left"></i>',
+      '<i class="fa fa-chevron-right"></i>',
+    ],
+
+    autoHeight: true,
+    smartSpeed: 1000,
+
+    // Preserve original testimonial layout: 1 item on small, 2 items on desktop
     responsive: {
       0: {
         items: 1,
         nav: false,
-        dots: true,
+        dots: false,
       },
       600: {
         items: 1,
@@ -138,8 +153,15 @@ $(document).ready(function () {
       },
       1000: {
         items: 2,
+        nav: true,
+        dots: false,
       },
     },
+  });
+
+  // Ensure autoplay resumes after manual nav clicks
+  $(".testimoni_slider").on("click", ".owl-next, .owl-prev", function () {
+    $(".testimoni_slider").trigger("play.owl.autoplay", [3000]);
   });
 
   $(".related_eventsSlider").owlCarousel({
