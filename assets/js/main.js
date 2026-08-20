@@ -80,7 +80,8 @@ $(document).ready(function () {
     // Autoplay
     autoplay: true,
     slideTransition: "linear",
-    autoplayTimeout: 3000,
+    // slowed down to ~50% speed (was 1000ms)
+    autoplayTimeout: 2000,
     autoplaySpeed: 3000,
     autoplayHoverPause: false,
 
@@ -119,8 +120,8 @@ $(document).ready(function () {
     // Autoplay (keeps autoplay but preserves original layout sizes)
     autoplay: true,
     slideTransition: "linear",
-    autoplayTimeout: 3000,
-    autoplaySpeed: 3000,
+    autoplayTimeout: 5000,
+    autoplaySpeed: 5000,
     autoplayHoverPause: false,
 
     // Navigation: enabled but only shown on larger viewports via responsive settings
@@ -161,7 +162,7 @@ $(document).ready(function () {
 
   // Ensure autoplay resumes after manual nav clicks
   $(".testimoni_slider").on("click", ".owl-next, .owl-prev", function () {
-    $(".testimoni_slider").trigger("play.owl.autoplay", [3000]);
+    $(".testimoni_slider").trigger("play.owl.autoplay", [2000]);
   });
 
   $(".related_eventsSlider").owlCarousel({
