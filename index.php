@@ -489,6 +489,23 @@
       </div>
       <div class="row pt-5 mt-3 justify-content-center">
 
+       <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+          <a href="anemia-mukat-bharat.html">
+            <div class="project_detailss">
+              <img src="assets/img/Anemia-Mukat/14.JPG" alt="" class="w-100">
+
+              <div class="ptojecttitle">
+                <div class="datebx">
+                  <h2>28-30 September 2026</h2>
+                </div>
+                <a href="anemia-mukat-bharat.html">
+                  <p>Anemia Mukt Bharat Abhiyaan, Lucknow</p>
+                </a>
+              </div>
+            </div>
+          </a>
+         </div>
+
       <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-abhiyaan.html">
             <div class="project_detailss">
@@ -540,7 +557,7 @@
           </a>
          </div>
 
-         <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="trackier-team.html">
             <div class="project_detailss">
               <img src="assets/img/Trackier/IMG_3.jpeg"" alt="" class="w-100">
@@ -555,7 +572,7 @@
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
 
         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="generation-retreat.html">
@@ -574,76 +591,9 @@
           </a>
          </div> -->
 
-         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="skylight.html">
-            <div class="project_detailss">
-              <img src="assets/img/Skylark/IMG_4.jpg"" alt="" class="w-100">
 
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>2nd Apr 2026 </h2>
-                </div>
-                <a href="skylight.html">
-                  <p>workshop session for Skylight </p>
-                </a>
-              </div>
-            </div>
-          </a>
-        </div> -->
 
-        
-        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="holi-celebration.html">
-            <div class="project_detailss">
-              <img src="assets/img/holi/Holi-9.png" alt="" class="w-100">
 
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>4th March 2026</h2>
-                </div>
-                <a href="holi-celebration.html">
-                  <p>Holi Celebration </p>
-                </a>
-              </div>
-            </div>
-          </a>
-         </div> -->
-
-         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="passing-gift.html">
-            <div class="project_detailss">
-              <img src="assets/Passing-gift3.png" alt="" class="w-100">
-
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>17–19 February 2026</h2>
-                </div>
-                <a href="passing-gift.html">
-                  <p>Branding work for the exhibition stall </p>
-                </a>
-              </div>
-            </div>
-          </a>
-
-         </div> -->
-
-         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="environmental-defense-fund-mumbai.html">
-            <div class="project_detailss">
-              <img src="assets/img/placeholder-clean.png" alt="" class="w-100">
-
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>15–21 Feb 2026</h2>
-                </div>
-                <a href="environmental-defense-fund-mumbai.html">
-                  <p>EDF, Mumbai Climate Week</p>
-                </a>
-              </div>
-            </div>
-          </a>
-
-         </div> -->
       </div>
 
       <div class="container">
