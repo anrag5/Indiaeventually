@@ -489,6 +489,23 @@
       </div>
       <div class="row pt-5 mt-3 justify-content-center">
 
+      <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+          <a href="anemia-chandigarh.html">
+            <div class="project_detailss">
+              <img src="assets/img/Anemia-Chandigarh/16.JPG" alt="" class="w-100">
+
+              <div class="ptojecttitle">
+                <div class="datebx">
+                  <h2>6-7 October 2026</h2>
+                </div>
+                <a href="anemia-chandigarh.html">
+                  <p>Anemia Mukt Bharat Abhiyaan,Chandigarh</p>
+                </a>
+              </div>
+            </div>
+          </a>
+         </div>
+
        <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-mukat-bharat.html">
             <div class="project_detailss">
@@ -496,7 +513,7 @@
 
               <div class="ptojecttitle">
                 <div class="datebx">
-                  <h2>28-30 September 2026</h2>
+                  <h2>29-30 September 2026</h2>
                 </div>
                 <a href="anemia-mukat-bharat.html">
                   <p>Anemia Mukt Bharat Abhiyaan, Lucknow</p>
@@ -513,7 +530,7 @@
 
               <div class="ptojecttitle">
                 <div class="datebx">
-                  <h2>21-23 September 2026</h2>
+                  <h2>22-23 September 2026</h2>
                 </div>
                 <a href="anemia-abhiyaan.html">
                   <p>Anemia Mukt Bharat Abhiyaan, Ahmedabad</p>
@@ -540,7 +557,7 @@
           </a>
          </div>
 
-      <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+      <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="aayka-mahakumbh.html">
             <div class="project_detailss">
               <img src="assets/img/AAYKA/IMG_4.jpeg" alt="" class="w-100">
@@ -555,7 +572,7 @@
               </div>
             </div>
           </a>
-         </div>
+         </div> -->
 
          <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="trackier-team.html">
@@ -573,24 +590,6 @@
             </div>
           </a>
         </div> -->
-
-        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="generation-retreat.html">
-            <div class="project_detailss">
-              <img src="assets/img/Genaration_India_Foundation/image5.jpeg" alt="" class="w-100">
-
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>13-15th Apr 2026</h2>
-                </div>
-                <a href="generation-retreat.html">
-                  <p>Retreat</p>
-                </a>
-              </div>
-            </div>
-          </a>
-         </div> -->
-
 
 
 
