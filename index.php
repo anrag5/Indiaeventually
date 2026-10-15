@@ -490,6 +490,24 @@
       <div class="row pt-5 mt-3 justify-content-center">
 
       <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+          <a href="birla-navya.html">
+            <div class="project_detailss">
+              <img src="assets/img/Birla_Navya_Decor/1.jpeg" alt="" class="w-100">
+
+              <div class="ptojecttitle">
+                <div class="datebx">
+                  <h2>10-20 October 2026</h2>
+                </div>
+                <a href="birla-navya.html">
+                  <p>Décor services at Birla Navya Society, Gurgaon </p>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+      <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-chandigarh.html">
             <div class="project_detailss">
               <img src="assets/img/Anemia-Chandigarh/16.JPG" alt="" class="w-100">
@@ -523,7 +541,7 @@
           </a>
          </div>
 
-      <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+        <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-abhiyaan.html">
             <div class="project_detailss">
               <img src="assets/img/Anemia-Sep/1.JPG" alt="" class="w-100">
@@ -540,7 +558,7 @@
           </a>
          </div>
 
-       <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+       <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-mukat.html">
             <div class="project_detailss">
               <img src="assets/img/Anemia/img2.png" alt="" class="w-100">
@@ -555,7 +573,7 @@
               </div>
             </div>
           </a>
-         </div>
+         </div> -->
 
       <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="aayka-mahakumbh.html">
@@ -573,25 +591,6 @@
             </div>
           </a>
          </div> -->
-
-         <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="trackier-team.html">
-            <div class="project_detailss">
-              <img src="assets/img/Trackier/IMG_3.jpeg"" alt="" class="w-100">
-
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>12th June 2026 </h2>
-                </div>
-                <a href="trackier-team.html">
-                  <p>Team Building Activity for Trackier </p>
-                </a>
-              </div>
-            </div>
-          </a>
-        </div> -->
-
-
 
       </div>
 
