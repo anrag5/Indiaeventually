@@ -489,6 +489,23 @@
       </div>
       <div class="row pt-5 mt-3 justify-content-center">
 
+       <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+          <a href="VDHM-JLN-Stadium.html">
+            <div class="project_detailss">
+              <img src="assets/img/placeholder-clean.png" alt="" class="w-100">
+
+              <div class="ptojecttitle">
+                <div class="datebx">
+                  <h2>18th October 2026</h2>
+                </div>
+                <a href="VDHM-JLN-Stadium.html">
+                  <p> Decor Services at VDHM,JLN Stadium, New Delhi </p>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+
       <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="birla-navya.html">
             <div class="project_detailss">
@@ -541,7 +558,7 @@
           </a>
          </div>
 
-        <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
+        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-abhiyaan.html">
             <div class="project_detailss">
               <img src="assets/img/Anemia-Sep/1.JPG" alt="" class="w-100">
@@ -556,7 +573,7 @@
               </div>
             </div>
           </a>
-         </div>
+         </div> -->
 
        <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
           <a href="anemia-mukat.html">
@@ -569,23 +586,6 @@
                 </div>
                 <a href="anemia-mukat.html">
                   <p>Anemia Mukt Bharat Abhiyaan, Delhi</p>
-                </a>
-              </div>
-            </div>
-          </a>
-         </div> -->
-
-      <!-- <div class="col-xl-3 col-md-6 col-lg-4 mb-3 card-item">
-          <a href="aayka-mahakumbh.html">
-            <div class="project_detailss">
-              <img src="assets/img/AAYKA/IMG_4.jpeg" alt="" class="w-100">
-
-              <div class="ptojecttitle">
-                <div class="datebx">
-                  <h2>8th July 2026</h2>
-                </div>
-                <a href="aayka-mahakumbh.html">
-                  <p>AAYKA Waterproofing and Constructions Standardisation Mahakumbh 2026  </p>
                 </a>
               </div>
             </div>
@@ -1280,6 +1280,42 @@
               <h2>Dr. Ashish Joshi,</h2>
               <h3> Leading Pharma Company </h3>
             </div>
+          </div>
+
+          <div class="testimony_box position-relative">
+            <div class="testimonial-media position-relative">
+              <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test2.png" style="height: 400px;">
+              <a href="https://www.instagram.com/reel/DYg4IFezSnb/?vrfl=MTVlM283ZjRmbjdlbQ%3D%3D" target="_blank"
+                class="testimonial-watch-btn">View Testimonial</a>
+            </div>
+            <!-- <div class="testimony-designation">
+              <h2>Mr. Anup Soni,</h2>
+              <h3>  Actor </h3>
+            </div> -->
+          </div>
+
+           <div class="testimony_box position-relative">
+            <div class="testimonial-media position-relative">
+              <img class="card-img-top img-fluid object-fit-cover" src="assets/img/test1.png" style="height: 400px;">
+              <a href="https://www.instagram.com/reel/DfB_z2kTRSQ/?mdxt=MTNzb3YzNHlqN3h6cA%3D%3D" target="_blank"
+                class="testimonial-watch-btn">View Testimonial</a>
+            </div>
+            <!-- <div class="testimony-designation">
+              <h2>Mr. Anup Soni,</h2>
+              <h3>  Actor </h3>
+            </div> -->
+          </div>
+
+           <div class="testimony_box position-relative">
+            <div class="testimonial-media position-relative">
+              <img class="card-img-top img-fluid object-fit-cover" src="assets/img/Anemia-Mukat/11.JPG" style="height: 400px;">
+              <a href="https://www.instagram.com/reel/DfB_Rg4Tah0/?exln=MTdiN24zamNlMHUwOA%3D%3D" target="_blank"
+                class="testimonial-watch-btn">View Testimonial</a>
+            </div>
+            <!-- <div class="testimony-designation">
+              <h2>Mr. Anup Soni,</h2>
+              <h3>  Actor </h3>
+            </div> -->
           </div>
 
         </div>
